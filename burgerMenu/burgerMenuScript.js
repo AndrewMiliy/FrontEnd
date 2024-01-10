@@ -16,3 +16,9 @@ function f(){
         document.getElementsByClassName('dropdown')[0].style.overflow = 'hidden';
     }
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    var dropdown = document.querySelector('.dropdown');
+    var pElementsCount = dropdown.querySelectorAll('p').length;
+    dropdown.style.setProperty('--number-of-p-elements', pElementsCount);
+  });

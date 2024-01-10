@@ -17,7 +17,7 @@ body {
   width: 100%;
   box-sizing: border-box;
   background: linear-gradient(300deg, #0e001f, #001b14);
-  padding: 20px;
+  padding: 14px;
   border-radius: 4px;
   position: relative;
   animation: textColor 10s ease infinite;
@@ -32,49 +32,52 @@ span{
     font-size: 18px;
 }
 
-.burger{
+.burger {
     position: relative;
-    float: right;
     font-size: 18px;
     margin-right: 14px;
 }
 
-.fa-bars{
+.fa-bars {
     transition: 300ms;
     position: absolute;
+    right: 0px;
 }
 
 .fa-bars.activ{
     position: absolute;
     opacity: 0;
+    right: 0px;
 }
 
 .fa-times{
     position: absolute;
     opacity: 0;
     transition: 300ms;
+    right: 0px;
 }
 
 .fa-times.activ{
     position: absolute;
     opacity: 1;
     color: #0fffc1;
+    right: 0px;
 }
 
-.dropDown{
+.dropdown{
     width: 100%;
     background: linear-gradient(300deg, #0e001f, #001b14);
     border-radius: 4px;
     color: #de7bfc;
     margin-top: 24px;
     max-height: 0;
-    overflow: visible;
+    overflow: hidden;
     transition: all 0.5s;
     animation: textColor 10s ease infinite;
 }
 
-.dropDown.down{
-    max-height: 320px;
+.dropdown.down {
+    max-height: calc(320px + (15px + 14px) * (var(--number-of-p-elements) - 1));
 }
 
 .arrow{
