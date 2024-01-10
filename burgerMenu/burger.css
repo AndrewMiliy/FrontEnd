@@ -1,0 +1,122 @@
+/*@import url(/zero.css);*/
+@import "https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap";
+
+body {
+  background-color: #252b37;
+  font-family: "Roboto", sans-serif;
+}
+
+.menu {
+    width: 260px;
+    margin-top: 100px;
+    margin-left: 200px;
+    cursor: pointer;
+}
+
+.title {
+  width: 100%;
+  box-sizing: border-box;
+  background: linear-gradient(300deg, #0e001f, #001b14);
+  padding: 20px;
+  border-radius: 4px;
+  position: relative;
+  animation: textColor 10s ease infinite;
+  color: #de7bfc;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+span{
+    float: right;
+    font-size: 18px;
+}
+
+.burger{
+    position: relative;
+    float: right;
+    font-size: 18px;
+    margin-right: 14px;
+}
+
+.fa-bars{
+    transition: 300ms;
+    position: absolute;
+}
+
+.fa-bars.activ{
+    position: absolute;
+    opacity: 0;
+}
+
+.fa-times{
+    position: absolute;
+    opacity: 0;
+    transition: 300ms;
+}
+
+.fa-times.activ{
+    position: absolute;
+    opacity: 1;
+    color: #0fffc1;
+}
+
+.dropDown{
+    width: 100%;
+    background: linear-gradient(300deg, #0e001f, #001b14);
+    border-radius: 4px;
+    color: #de7bfc;
+    margin-top: 24px;
+    max-height: 0;
+    overflow: visible;
+    transition: all 0.5s;
+    animation: textColor 10s ease infinite;
+}
+
+.dropDown.down{
+    max-height: 320px;
+}
+
+.arrow{
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #001b14;
+    position: absolute;
+    right: 20px;
+    bottom: -24px;
+    opacity: 0;
+    transition: 200ms;
+}
+
+.arrow.gone{
+    opacity: 1;
+}
+
+p{
+    padding: 15px 14px;
+    margin: 0;
+    transition: 300ms;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
+
+p:hover{
+    background: linear-gradient(300deg, #00181f, #00041b);
+    transform: scale(1.05);
+    color: #0fffc1;
+    animation: textColor 10s ease infinite;
+}
+
+@keyframes textColor {
+    0% {
+        box-shadow: 0 0 40px -10px #7e0fff;
+    }
+    50% {
+        box-shadow:0 0 40px -10px #0fffc1;
+    }
+    100% {
+        box-shadow:0 0 40px -10px #7e0fff;
+    }
+}
