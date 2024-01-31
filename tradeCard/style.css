@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #6b787e;
+}
+
+.card {
+    position: relative;
+    width: 600px;
+    height: 280px;
+    display: flex;
+    background: #1a1a1a;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.card .leftPanel {
+    position: relative;
+    width: 250px;
+    height: 100%;
+    border-radius: 15px 0 0 15px;
+    background: linear-gradient(0deg, rgb(192, 70, 70), rgb(77, 18, 18));
+}
+
+.card .leftPanel .arrow{
+    position: absolute;
+    width: 130%;
+    height: 130%;
+    right: 100px;
+    top: -70px;
+    background-image: url(arrow.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.1;
+    transform: rotate(90deg);
+    filter: invert(100%);
+}
+
+.card .leftPanel .img_1{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 30px;
+    top: 30px;
+    background-image: url(hedera.png);
+    background-size: contain;
+    background-color: rgb(214, 214, 214);
+    border-radius: 51%;
+}
+
+.card .leftPanel .img_2 {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 70px;
+    top: 30px;
+    background-image: url(usdt.png);
+    background-size: contain;
+    background-color: rgb(214, 214, 214);
+    border-radius: 50%;
+}
+
+.card .leftPanel .percentage
+{
+    position: absolute;
+    bottom: 70px;
+    left: 40px;
+    font-size: 50px;
+    font-weight: 600;
+    color: #d8d8d8;
+}
+
+.card .leftPanel .value {
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+    font-size: 20px;
+    font-weight: 300;
+    color: #d8d8d8;
+}

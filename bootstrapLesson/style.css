@@ -1,0 +1,6 @@
+@import url(/zero.css);
+
+.div {
+    border: 0.5px solid black;
+    color: burlywood;
+}
